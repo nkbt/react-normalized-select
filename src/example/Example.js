@@ -1,12 +1,12 @@
 import React from 'react';
-import Component from '..';
+import Select from '..';
 
 
 const App = React.createClass({
   render() {
     return (
       <div>
-        <Component />
+        <Select />
       </div>
     );
   }

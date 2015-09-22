@@ -1,7 +1,7 @@
 {
-  "name": "react-component-template",
+  "name": "react-normalized-select",
   "version": "1.0.0",
-  "description": "React component",
+  "description": "Normalized select, returns array of values in multiple mode",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:example && npm run build:bower",
@@ -20,19 +20,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nkbt/react-component-template.git"
+    "url": "https://github.com/nkbt/react-normalized-select.git"
   },
   "keywords": [
     "component",
     "react-component",
-    "react"
+    "react",
+    "select",
+    "multiple",
+    "select-multiple",
+    "normalized"
   ],
   "author": "Nik Butenko <nik@butenko.me> (http://butenko.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nkbt/react-component-template/issues"
+    "url": "https://github.com/nkbt/react-normalized-select/issues"
   },
-  "homepage": "https://github.com/nkbt/react-component-template",
+  "homepage": "https://github.com/nkbt/react-normalized-select",
   "peerDependencies": {
     "react": "^0.13 || ~0.14.0-beta || ~0.14.0-rc"
   },

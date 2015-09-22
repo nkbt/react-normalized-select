@@ -1,4 +1,4 @@
-import Component from './Component';
+import Select from './Select';
 
 
-export default Component;
+export default Select;
