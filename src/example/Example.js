@@ -1,16 +1,5 @@
 import React from 'react';
-import Select from '..';
-
-
-const App = React.createClass({
-  render() {
-    return (
-      <div>
-        <Select />
-      </div>
-    );
-  }
-});
+import App from './App';
 
 
 React.render(<App />, document.body);
