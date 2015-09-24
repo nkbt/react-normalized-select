@@ -9,6 +9,8 @@
 
 Normalized `<select>`, returns array of values in multiple mode
 
+![React Normalized Select](src/example/react-normalized-select.gif)
+
 ## Reason
 
 When using common `<select>` element it returns only single value in onChange event. So to get the array of selected values it is necessary to traverse through it's options to find selected ones. This component normalizes behaviour of `<select>` so it returns array of values if `multiple={true}` flag is present.
@@ -16,6 +18,27 @@ When using common `<select>` element it returns only single value in onChange ev
 Component is a pure wrapper, has no extra logic and supposed to be a drop-in replacement for a conventional `<select>`
 
 This normalization is necessary to work in composition with other form elements wrappers without breaking `onChange` API.
+
+
+## Installation
+
+### npm
+
+```sh
+npm install --save react-normalized-select
+```
+
+### bower
+
+TODO #3
+
+## Demo
+
+[http://nkbt.github.io/react-normalized-select/example](http://nkbt.github.io/react-normalized-select/example)
+
+## Codepen demo
+
+TODO #3
 
 ## Usage
 
@@ -57,7 +80,6 @@ Will render conventional `<select>` but when we choose apples **and** bananas, w
 import React from 'react';
 import Select from 'react-normalized-select';
 
-
 const App = React.createClass({
   getInitialState() {
     return {
@@ -66,12 +88,10 @@ const App = React.createClass({
     };
   },
 
-
   renderOptions() {
     return ['apples', 'oranges', 'bananas', 'kiwis']
       .map(option => <option key={option} value={option}>{option}</option>);
   },
-
 
   render() {
     return (
@@ -108,7 +128,20 @@ const App = React.createClass({
   }
 });
 
-
 React.render(<App />, document.body);
 ```
 
+## Development and testing
+
+```bash
+git clone git@github.com:nkbt/react-normalized-select.git
+cd react-normalized-select
+npm install
+npm start
+```
+
+Then 
+
+```bash
+open http://localhost:8080
+```
