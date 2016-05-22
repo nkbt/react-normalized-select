@@ -24,7 +24,6 @@ This normalization is necessary to work in composition with other form elements 
 ## Installation
 
 ### NPM
-
 ```sh
 npm install --save react react-normalized-select
 ```
@@ -34,23 +33,7 @@ Don't forget to manually install peer dependencies (`react`) if you use npm@3.
 
 ### Bower:
 ```sh
-bower install --save https://npmcdn.com/react-normalized-select/build/react-normalized-select.js
-```
-
-or in `bower.json`
-
-```json
-{
-  "dependencies": {
-    "react-normalized-select": "https://npmcdn.com/react-normalized-select/bower.zip"
-  }
-}
-```
-
-then include as
-```html
-<script src="bower_components/react/react.js"></script>
-<script src="bower_components/react-normalized-select/build/react-normalized-select.js"></script>
+bower install --save https://npmcdn.com/react-normalized-select/bower.zip
 ```
 
 
@@ -110,6 +93,7 @@ Will render conventional `<select>` but when we choose apples **and** bananas, w
 
 ```js
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Select from 'react-normalized-select';
 
 const App = React.createClass({

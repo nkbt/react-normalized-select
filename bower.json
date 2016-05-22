@@ -2,7 +2,12 @@
   "name": "react-normalized-select",
   "version": "0.0.0",
   "description": "Normalized select, returns array of values in multiple mode",
-  "main": "lib/index.js",
+  "main": [
+    "build/react-normalized-select.js",
+    "build/react-normalized-select.js.map",
+    "build/react-normalized-select.min.js",
+    "build/react-normalized-select.min.js.map"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nkbt/react-normalized-select.git"
@@ -10,7 +15,11 @@
   "keywords": [
     "component",
     "react-component",
-    "react"
+    "react",
+    "select",
+    "multiple",
+    "select-multiple",
+    "normalized"
   ],
   "authors": [
     "Nik Butenko <nik@butenko.me>"
@@ -18,7 +27,7 @@
   "license": "MIT",
   "homepage": "https://github.com/nkbt/react-normalized-select",
   "dependencies": {
-    "react": "^0.14 || ^15"
+    "react": "^0.13 || ^0.14 || ^15"
   },
   "ignore": [
     "**/.*",
