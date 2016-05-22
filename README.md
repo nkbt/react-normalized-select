@@ -42,7 +42,7 @@ or in `bower.json`
 ```json
 {
   "dependencies": {
-    "react-motion": "https://npmcdn.com/react-normalized-select/bower.zip"
+    "react-normalized-select": "https://npmcdn.com/react-normalized-select/bower.zip"
   }
 }
 ```
