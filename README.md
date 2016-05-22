@@ -1,11 +1,12 @@
-# react-normalized-select
+# react-normalized-select [![npm](https://img.shields.io/npm/v/react-normalized-select.svg?style=flat-square)](https://www.npmjs.com/package/react-normalized-select)
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nkbt/help)
+[![Gitter](https://img.shields.io/gitter/room/nkbt/help.svg?style=flat-square)](https://gitter.im/nkbt/help)
 
-[![Circle CI](https://circleci.com/gh/nkbt/react-normalized-select.svg?style=svg)](https://circleci.com/gh/nkbt/react-normalized-select)
-[![Coverage Status](https://coveralls.io/repos/nkbt/react-normalized-select/badge.svg?branch=master)](https://coveralls.io/r/nkbt/react-normalized-select?branch=master)
-[![Dependency Status](https://david-dm.org/nkbt/react-normalized-select.svg)](https://david-dm.org/nkbt/react-normalized-select)
-[![devDependency Status](https://david-dm.org/nkbt/react-normalized-select/dev-status.svg)](https://david-dm.org/nkbt/react-normalized-select#info=devDependencies)
+[![CircleCI](https://img.shields.io/circleci/project/nkbt/react-normalized-select.svg?style=flat-square&label=nix-build)](https://circleci.com/gh/nkbt/react-normalized-select)
+[![AppVeyor](https://img.shields.io/appveyor/ci/nkbt/react-normalized-select.svg?style=flat-square&label=win-build)](https://ci.appveyor.com/project/nkbt/react-normalized-select)
+[![Coverage](https://img.shields.io/codecov/c/github/nkbt/react-normalized-select.svg?style=flat-square)](https://codecov.io/github/nkbt/react-normalized-select?branch=master)
+[![Dependencies](https://img.shields.io/david/nkbt/react-normalized-select.svg?style=flat-square)](https://david-dm.org/nkbt/react-normalized-select)
+[![Dev Dependencies](https://img.shields.io/david/dev/nkbt/react-normalized-select.svg?style=flat-square)](https://david-dm.org/nkbt/react-normalized-select#info=devDependencies)
 
 Normalized `<select>`, returns array of values in multiple mode
 
@@ -22,23 +23,54 @@ This normalization is necessary to work in composition with other form elements 
 
 ## Installation
 
-### npm
+### NPM
 
 ```sh
-npm install --save react-normalized-select
+npm install --save react react-normalized-select
 ```
 
-### bower
+Don't forget to manually install peer dependencies (`react`) if you use npm@3.
 
-TODO #3
+
+### Bower:
+```sh
+bower install --save https://npmcdn.com/react-normalized-select/build/react-normalized-select.js
+```
+
+or in `bower.json`
+
+```json
+{
+  "dependencies": {
+    "react-motion": "https://npmcdn.com/react-normalized-select/bower.zip"
+  }
+}
+```
+
+then include as
+```html
+<script src="bower_components/react/react.js"></script>
+<script src="bower_components/react-normalized-select/build/react-normalized-select.js"></script>
+```
+
+
+### 1998 Script Tag:
+```html
+<script src="https://npmcdn.com/react/dist/react.js"></script>
+<script src="https://npmcdn.com/react-normalized-select/build/react-normalized-select.js"></script>
+(Module exposed as `NormalizedSelect`)
+```
+
 
 ## Demo
 
-[http://nkbt.github.io/react-normalized-select/example](http://nkbt.github.io/react-normalized-select/example)
+[http://nkbt.github.io/react-normalized-select](http://nkbt.github.io/react-normalized-select)
 
 ## Codepen demo
 
-TODO #3
+```js
+// TODO
+```
 
 ## Usage
 
@@ -128,20 +160,41 @@ const App = React.createClass({
   }
 });
 
-React.render(<App />, document.body);
+
+const appRoot = document.createElement('div');
+document.body.appendChild(appRoot);
+ReactDOM.render(<App />, appRoot);
 ```
 
 ## Development and testing
+
+Currently is being developed and tested with the latest stable `Node 6` on `OSX` and `Windows`.
+
+To run example covering all `NormalizedSelect` features, use `npm start dev`, which will compile `src/example/Example.js`
 
 ```bash
 git clone git@github.com:nkbt/react-normalized-select.git
 cd react-normalized-select
 npm install
-npm start
-```
+npm start dev
 
-Then 
-
-```bash
+# then
 open http://localhost:8080
 ```
+
+## Tests
+
+```bash
+# to run tests
+npm start test
+
+# to generate test coverage (./reports/coverage)
+npm start test.cov
+
+# to run end-to-end tests
+npm start test.e2e
+```
+
+## License
+
+MIT

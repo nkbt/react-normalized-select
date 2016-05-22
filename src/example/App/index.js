@@ -1,5 +1,6 @@
 import React from 'react';
-import Select from '..';
+import Select from '../..';
+import css from './App.css';
 
 
 const App = React.createClass({
@@ -19,7 +20,8 @@ const App = React.createClass({
 
   render() {
     return (
-      <div>
+      <div className={css.app}>
+        <h1>react-normalized-select</h1>
         <div>
           <h2>Single choice select</h2>
           <p>(drop-in replacement)</p>
