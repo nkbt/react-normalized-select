@@ -1,4 +1,3 @@
-import Select from './Select';
+const {NormalizedSelect} = require('./Component');
 
-
-export default Select;
+module.exports = NormalizedSelect;

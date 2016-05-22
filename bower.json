@@ -1,11 +1,11 @@
 {
   "name": "react-normalized-select",
-  "version": "1.0.0",
-  "description": "React component",
-  "main": "react-normalized-select.js",
+  "version": "0.0.0",
+  "description": "Normalized select, returns array of values in multiple mode",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bower-registry/react-normalized-select.git"
+    "url": "https://github.com/nkbt/react-normalized-select.git"
   },
   "keywords": [
     "component",
@@ -13,12 +13,12 @@
     "react"
   ],
   "authors": [
-    "Nik Butenko <nik@butenko.me> (http://butenko.me/)"
+    "Nik Butenko <nik@butenko.me>"
   ],
   "license": "MIT",
   "homepage": "https://github.com/nkbt/react-normalized-select",
   "dependencies": {
-    "react": "^0.13.3"
+    "react": "^0.14 || ^15"
   },
   "ignore": [
     "**/.*",

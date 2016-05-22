@@ -2,7 +2,7 @@ import React from 'react';
 import {shouldComponentUpdate} from 'react/lib/ReactComponentWithPureRenderMixin';
 
 
-const Select = React.createClass({
+export const NormalizedSelect = React.createClass({
   propTypes: {
     multiple: React.PropTypes.bool,
     onChange: React.PropTypes.func,
@@ -15,7 +15,8 @@ const Select = React.createClass({
 
   onChange(event) {
     if (!this.props.multiple) {
-      return this.props.onChange(event);
+      this.props.onChange(event);
+      return;
     }
     this.props.onChange({
       ...event,
@@ -35,6 +36,3 @@ const Select = React.createClass({
     return onChange ? <select {...props} onChange={this.onChange} /> : <select {...props} />;
   }
 });
-
-
-export default Select;
