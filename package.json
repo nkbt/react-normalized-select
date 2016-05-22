@@ -1,6 +1,6 @@
 {
   "name": "react-normalized-select",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Normalized select, returns array of values in multiple mode",
   "main": "lib/index.js",
   "config": {
