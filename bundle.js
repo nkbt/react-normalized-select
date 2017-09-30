@@ -33,9 +33,6 @@
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -63,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,25 +71,46 @@ module.exports = React;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_css__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__app_css__);
+/* global document */
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.App = undefined;
 
+
+
+
+var appRoot = document.createElement('div');
+
+appRoot.id = 'app';
+document.body.appendChild(appRoot);
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__App__["a" /* App */], null), appRoot);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = ReactDOM;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return App; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_Component__ = __webpack_require__(4);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Component = __webpack_require__(5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -100,7 +118,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = exports.App = function (_React$PureComponent) {
+
+
+
+var App = function (_React$PureComponent) {
   _inherits(App, _React$PureComponent);
 
   function App() {
@@ -119,7 +140,7 @@ var App = exports.App = function (_React$PureComponent) {
       multi: ['apples']
     }, _this.renderOptions = function () {
       return ['apples', 'oranges', 'bananas', 'kiwis'].map(function (option) {
-        return _react2.default.createElement(
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'option',
           { key: option, value: option },
           option
@@ -133,32 +154,32 @@ var App = exports.App = function (_React$PureComponent) {
     value: function render() {
       var _this2 = this;
 
-      return _react2.default.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'app' },
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h1',
           null,
           'react-normalized-select'
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h2',
             null,
             'Single choice select'
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             null,
             '(drop-in replacement)'
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'label',
             { htmlFor: 'single' },
-            _react2.default.createElement(
-              _Component.NormalizedSelect,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* NormalizedSelect */],
               {
                 id: 'single',
                 value: this.state.single,
@@ -168,26 +189,26 @@ var App = exports.App = function (_React$PureComponent) {
               this.renderOptions()
             )
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'pre',
             null,
             'this.state.single = ',
             JSON.stringify(this.state.single, null, '  ')
           )
         ),
-        _react2.default.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           null,
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'h2',
             null,
             'Multi-choice select'
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'label',
             { htmlFor: 'multi' },
-            _react2.default.createElement(
-              _Component.NormalizedSelect,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1__src_Component__["a" /* NormalizedSelect */],
               {
                 id: 'multi',
                 multiple: true,
@@ -199,7 +220,7 @@ var App = exports.App = function (_React$PureComponent) {
               this.renderOptions()
             )
           ),
-          _react2.default.createElement(
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'pre',
             null,
             'this.state.multi = ',
@@ -211,70 +232,19 @@ var App = exports.App = function (_React$PureComponent) {
   }]);
 
   return App;
-}(_react2.default.PureComponent);
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = ReactDOM;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.PureComponent);
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(3);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _App = __webpack_require__(1);
-
-__webpack_require__(2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/* global document */
-
-var appRoot = document.createElement('div');
-
-appRoot.id = 'app';
-document.body.appendChild(appRoot);
-_reactDom2.default.render(_react2.default.createElement(_App.App, null), appRoot);
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.NormalizedSelect = undefined;
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NormalizedSelect; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -284,7 +254,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var NormalizedSelect = exports.NormalizedSelect = function (_React$PureComponent) {
+
+
+
+var NormalizedSelect = function (_React$PureComponent) {
   _inherits(NormalizedSelect, _React$PureComponent);
 
   function NormalizedSelect() {
@@ -322,17 +295,22 @@ var NormalizedSelect = exports.NormalizedSelect = function (_React$PureComponent
           onChange = _props.onChange,
           props = _objectWithoutProperties(_props, ['onChange']);
 
-      return onChange ? _react2.default.createElement('select', _extends({}, props, { onChange: this.onChange })) : _react2.default.createElement('select', props);
+      return onChange ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('select', _extends({}, props, { onChange: this.onChange })) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('select', props);
     }
   }]);
 
   return NormalizedSelect;
-}(_react2.default.PureComponent);
-
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.PureComponent);
 NormalizedSelect.defaultProps = {
   multiple: false,
   onChange: undefined
 };
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
